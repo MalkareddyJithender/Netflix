@@ -95,7 +95,7 @@ function BrowseHeader({ category,setCategory,setSlideRows,slideRows,slides }) {
                                           })
                                           .catch((error) =>
                                           {
-                                              console.log(error.message);
+                                              console.log('error',error.message);
                                           })
                                     }}>
                                         Sign out

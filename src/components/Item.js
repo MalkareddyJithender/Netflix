@@ -3,7 +3,6 @@ import React,{useState} from 'react';
 
 function Item(props) {
         const [showContent, setShowContent] = useState(false);
-        console.log('heyy i am!');
     return (
         <div className="item">
             <div className="item__header" onClick={() =>
