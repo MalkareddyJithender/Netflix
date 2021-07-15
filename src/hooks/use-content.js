@@ -8,7 +8,7 @@ function useContent(target)
     useEffect(() =>
     {
         axios
-         .get(`http://localhost:3001/${target}`)
+         .get(`https://g2-netflix-2.herokuapp.com/${target}`)
          .then((response) =>
          {
             setContent(response.data);
