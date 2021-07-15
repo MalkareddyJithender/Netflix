@@ -1,0 +1,183 @@
+.header
+{
+    background: url('../home-bg.jpg');
+    border-bottom:8px solid #222;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.header__top
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:64px;
+    margin:0px 56px;
+    padding:18px 0px;
+}
+
+.header__top > img
+{
+    width:167px;
+    height:45px;
+    margin-right:40px;
+}
+
+.header__topButton
+{
+    box-sizing:border-box;
+    display:block;
+    background:#e50914;
+    width:84px;
+    height:fit-content;
+    color:white;
+    border:0px;
+    font-size:15px;
+    border-radius:3px;
+    padding:8px 17px;
+    cursor:pointer;
+}
+
+.header__top > button:hover
+{
+    background:#f40612;
+}
+
+.header__body
+{
+    display:flex;
+    flex-direction: column;
+    padding:165px 45px;
+}
+
+.header__title
+{
+    color:white;
+    width:100%;
+    max-width:640px;
+    margin:auto;
+    font-size:50px;
+    font-weight:600;
+}
+
+.header__subtitle
+{
+    color:white;
+    max-width:640px;
+    width:100%;
+    font-size:26px;
+    font-weight:normal;
+    margin:16px auto;
+}
+
+.header__optForm
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    height:100%;
+    margin-top:20px;
+}
+
+.header__optForm > p
+{
+    font-size:17.2px;
+    color:white;
+    text-align:center;
+    font-weight:300;
+}
+
+.header__optForm > div
+{
+    display:flex;
+    justify-content: center;
+}
+
+.header__input
+{
+    box-sizing:border-box;
+    max-width:450px;
+    width:100%;
+    border:0px;
+    padding:10px;
+    height:70px;
+    outline:none;
+}
+
+.header__button
+{
+    display:flex;
+    align-items:center;
+    background:#e50914;
+    font-weight:450;
+    color:white;
+    font-size:26px;
+    border:0;
+    cursor:pointer;
+    padding:0px 32px;
+}
+
+.header__button:hover
+{
+    background:#f40612;
+}
+
+.header__button > p
+{
+    margin:0px;
+}
+
+.header__button > img
+{
+    margin-left:10px;
+    width:24px;
+    filter:brightness(0) invert(1);
+}
+
+@media(min-width:0px) and (max-width:600px)
+{
+    .header__title
+    {
+        font-size:35px;
+    }
+
+    .header__subtitle
+    {
+        font-size:18px;
+    }
+}
+
+
+@media (max-width:1000px)
+{
+    .header__top > img
+    {
+        width:108px;
+        height:32px; 
+    }
+
+    .header__input
+    {
+        height:50px;
+    }
+
+    .header__button
+    {
+        font-size:16px;
+        height:50px;
+        margin-top:20px;
+        font-weight:bold;
+        padding:0px 16px;
+    }
+
+    .header__button > img
+    {
+        width:16px;
+    }
+
+    .header__optForm > div
+    {
+    flex-direction: column;
+    align-items: center;
+    }
+}

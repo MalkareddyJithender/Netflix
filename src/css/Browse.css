@@ -1,0 +1,25 @@
+.browseContainer__header
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:64px;
+    margin:0px 56px;
+    padding:18px 0px;
+}
+
+.browseContainer__header > img
+{
+    width:167px;
+    height:45px;
+    margin-right:40px;
+}
+
+@media (max-width:1000px) 
+{
+    .browseContainer__header > img
+    {
+        width:108px;
+        height:32px; 
+    }
+}

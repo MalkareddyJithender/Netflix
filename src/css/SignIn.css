@@ -1,0 +1,106 @@
+.signIn, .signUp
+{
+    display:flex;
+    flex-direction:column;
+    min-height:660px;
+    background-color: rgba(0,0,0,0.75);
+    border-radius: 5px;
+    box-sizing:border-box;
+    width:100%;
+    max-width: 450px;
+    margin:auto;
+    margin-bottom:100px;
+    padding:60px;
+}
+
+.signIn__error, .signUp__error
+{
+    border-radius:3px;
+    font-size:14px;
+    color:#e87c03;
+    margin:0px 0px 16px;
+    padding:5px 10px;
+}
+
+.signIn > form, .signUp > form
+{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    max-width: 450px;
+}
+
+.signIn__title, .signUp__title
+{
+    color:#fff;
+    font-size:32px;
+    font-weight:bold;
+    margin-bottom: 28px;
+}
+
+.signIn__text, .signUp__text
+{
+    color:gray;
+}
+
+.signIn__Link, .signUp__Link
+{
+    color:white;
+    text-decoration: none;
+}
+
+.signIn__a, .signUp__a
+{
+    color:blue;
+}
+
+.signIn__Link:hover,.signUp__Link:hover
+{
+    text-decoration: underline;
+}
+
+.signIn__a:hover, .signUp__a:hover
+{
+    text-decoration:underline;
+}
+
+.signIn > form > input, .signUp > form > input
+{
+    background:#333;
+    border-radius:4px;
+    border:0;
+    color:white;
+    height:50px;
+    line-height: 50px;
+    padding:5px 20px;
+    margin-bottom: 20px;
+    outline:none;
+}
+
+.signIn > form > input:last-of-type, .signUp > form > input:last-of-type
+{
+    margin-bottom:30px;
+}
+
+button[type="submit"]
+{
+    background:#e50914;
+    border-radius:4px;
+    font-size:16px;
+    font-weight:bold;
+    padding:16px;
+    border:0;
+    color:white;
+    cursor:pointer;
+    margin:24px 0px 12px;
+}
+
+button[type="submit"]:disabled
+{
+    opacity:0.50;
+}
+
+.signIn__textTwo, .signUp__textTwo
+{
+    font-size:small;
+}

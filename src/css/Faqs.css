@@ -1,0 +1,32 @@
+.faqsContainer
+{
+    display: flex;
+    border-bottom:8px solid #222;
+}
+
+.faqsContainer__div
+{
+    display:flex;
+    flex-direction:column;
+    padding:70px 45px;
+    max-width:815px;
+    margin:auto;
+}
+
+.faqsContainer__title
+{
+    font-size:50px;
+    line-height:1.1;
+    margin-top:0px;
+    margin-bottom:8px;
+    color:white;
+    text-align:center;
+}
+
+@media (max-width:600px)
+{
+    .faqsContainer__title
+    {
+        font-size:25px;
+    }
+}

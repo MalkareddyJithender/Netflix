@@ -1,0 +1,85 @@
+.optForm
+{
+    display:flex;
+    justify-content:center;
+    height:100%;
+    margin-top:20px;
+    flex-wrap:wrap;
+}
+
+.optForm > p
+{
+    font-size:17.2px;
+    color:white;
+    text-align:center;
+    font-weight:300;
+}
+
+.optForm__input
+{
+    box-sizing:border-box;
+    max-width:450px;
+    width:100%;
+    border:0px;
+    padding:10px;
+    height:70px;
+    outline:none;
+}
+
+.optForm__button
+{
+    display:flex;
+    align-items:center;
+    background:#e50914;
+    font-weight:450;
+    color:white;
+    font-size:26px;
+    border:0;
+    cursor:pointer;
+    padding:0px 32px;
+}
+
+.optForm__button:hover
+{
+    background:#f40612;
+}
+
+.optForm__button > p
+{
+    margin:0px;
+}
+
+.optForm__button > img
+{
+    margin-left:10px;
+    width:24px;
+    filter:brightness(0) invert(1);
+}
+
+@media (max-width:1000px)
+{
+    .optForm
+    {
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .optForm__input
+    {
+        height:50px;
+    }
+
+    .optForm__button
+    {
+        font-size:16px;
+        height:50px;
+        margin-top:20px;
+        font-weight:bold;
+        padding:0px 16px;
+    }
+
+    .optForm__button > img
+    {
+        width:16px;
+    }
+}

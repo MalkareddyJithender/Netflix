@@ -1,0 +1,251 @@
+.browseHeader
+{
+    background: url('../aakasham.jpg');
+    border-bottom:8px solid #222;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.browseHeader__top
+{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    height:64px;
+    margin:0px 56px;
+    padding:18px 0px;
+}
+.browseHeader__topLeft, .browseHeader__topRight
+{
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    margin-bottom:10px;
+}
+.browseHeader__topLeft > img
+{
+    width:167px;
+    height:45px;
+    margin-right:40px;
+}
+.browseHeader__topLeft > a
+{
+    color:white;
+    margin-right:30px;
+    text-decoration:none;
+}
+.browseHeader__topLeft > a:hover
+{
+    font-weight:bold;
+}
+.browseHeader__topLeft > a:last-of-type
+{
+    margin-right:0px;
+}
+
+.browseHeader__search
+{
+    display:flex;
+    align-items:center;
+}
+.browseHeader__search > button
+{
+    cursor:pointer;
+    border:0;
+    background-color: transparent;
+}
+.browseHeader__searchIcon
+{
+    filter:brightness(0) invert(1);
+    width:16px;
+}
+.browseHeader__searchInput
+{
+    background:#44444459;
+    color:white;
+    border:1px solid white;
+    height:30px;
+    font-size:14px;
+    transition:width 5s;
+    margin-left:10px;
+    padding:0px 10px;
+    width:200px;
+    opacity:1;
+    outline:none;
+}
+.browseHeader__profile
+{
+    display:flex;
+    align-items:center;
+    margin-left:20px;
+    position:relative;
+}
+.browseHeader__profilePic
+{
+    height:32px;
+    width:32px;
+    cursor:pointer;
+    border:0;
+}
+.browseHeader__profile:hover > .browseHeader__dropdown
+{
+    display:flex;
+    flex-direction:column;
+}
+.browseHeader__dropdown
+{
+    display:none;
+    background-color:black;
+    width:110px;
+    padding:10px;
+    position:absolute;
+    top:32px;
+    right:10px;
+}
+
+.browseHeader__dropdownitem1
+{
+    display:flex;
+    align-items:center;
+    margin-bottom:10px;
+}
+.browseHeader__dropdownitem1 > img
+{
+    margin-right:10px;
+}
+
+.browseHeader__dropdownitem1 > a
+{
+    margin:0;
+    color:white;
+}
+.browseHeader__dropdownitem1 > a:hover
+{
+    font-weight:bold;
+}
+
+.browseHeader__dropdownitem2 > a:hover
+{
+    font-weight:bold;
+}
+
+.browseHeader__dropdownitem1 >img,.browseHeader__dropdownitem1 >a
+{
+    cursor:default;
+}
+
+.browseHeader__dropdownitem2 > a
+{
+    cursor:pointer;
+    color:white;
+    /* font-size:12px; */
+}
+.browseHeader__text
+{
+    padding:150px 0px 500px 56px;
+    display:flex;
+    flex-direction:column;
+    align-items:normal;
+    width:50%;
+}
+
+.browseHeader__title
+{
+    color:white;
+    font-size:50px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.45);
+    font-weight:bold;
+    line-height:normal;
+    margin:0px 0px 20px 0px;
+}
+
+.browseHeader__subTitle
+{
+    color:white;
+    font-size:22px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.45);
+    line-height:normal;
+    margin:0;
+}
+
+.browseHeader__playButton
+{
+    box-shadow:0 0.6vw 1vw -0.4vw rgba(0,0,0,0.35);
+    background-color:#e6e6e6;
+    border-width:0;
+    color:#000;
+    font-weight:bold;
+    border-radius:5px;
+    padding:10px 20px;
+    max-width:130px;
+    font-size:20px;
+    margin-top:30px;
+    cursor:pointer;
+    transition:background-color 0.3s;
+}
+
+.browseHeader__playButton:hover
+{
+    color:white;
+    background-color:#ff1e1e;
+}
+
+@media(min-width:0px) and (max-width:600px)
+{
+    .browseHeader__title
+    {
+        font-size:35px;
+    }
+
+    .browseHeader__subtitle
+    {
+        font-size:18px;
+    }
+}
+
+@media(min-width:0px) and (max-width:700px)
+{
+    .browseHeader__search
+    {
+        display:none;
+    }
+}
+
+@media (min-width:0px) and (max-width:1100px)
+{
+    .browseHeader
+    {
+        background:none;
+    }
+    .browseHeader__topLeft > img
+    {
+        width:108px;
+        height:32px; 
+    }
+
+    .browseHeader__text
+    {
+        display:none;
+    }
+}
+
+@media
+(min-width:0px)
+and
+(max-width:350px)
+{
+    .browseHeader__top
+    {
+        margin:0px 15px;
+    }
+}
+
+@media
+(min-width:351px)
+and
+(max-width:440px)
+{
+    .browseHeader__top
+    {
+        margin:0px 30px;
+    }
+}
