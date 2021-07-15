@@ -48,3 +48,29 @@
     transform:scale(1.05,1.05);
 }
 
+@media (min-width:501px) and (max-width:600px)
+{
+    .player__inner
+    {
+        max-width:480px;
+        margin:auto;
+    }
+}
+
+@media (min-width:401px) and (max-width:500px)
+{
+    .player__inner
+    {
+        max-width:390px;
+        margin:auto;
+    }
+}
+
+@media (max-width:400px)
+{
+    .player__inner
+    {
+        max-width:340px;
+        margin:auto;
+    }
+}
